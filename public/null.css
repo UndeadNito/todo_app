@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:focus,
+input:active{
+    border: none;
+    outline: none;
+}

@@ -10,7 +10,9 @@ export const Header = () =>{
         <div className="header_wrapper">
             <div className="header_logo">
                 <Logo/>
-                Todo list
+                <span>
+                    Todo list
+                </span>
             </div>
         </div>
     )

@@ -9,19 +9,30 @@
 
     padding: 10px 20px;
 
-    background-color: #2C2C2C;
+    background-color: var(--color-background-dark, black);
+
+    border-bottom: var(--color-border-main, #30363d) solid 1px;
 }
 
 .header_logo{
-    color: white;
-
-    font-weight: 600;
-    font-size: 34px;
+    font-weight: var(--font-weight-big, 600);
+    font-size: var(--font-size-big, 34px);
 
     svg{
         width: 30px;
         height: 30px;
 
-        
+        color: var(--color-font-main, #e6edf3);
+    }
+
+    span{
+        color: transparent;
+
+        background: linear-gradient(265deg, #CDFFD5 66.93%, #C1DEFF 80.63%, #C9C0FF 99.19%);
+        background-clip: text;
+
+        transition-duration: .3s;
+
+        cursor: default;
     }
 }
