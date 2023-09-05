@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+input{
+    min-width: 40px;
+}
+
 input:focus,
 input:active{
     border: none;

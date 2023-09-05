@@ -1,0 +1,40 @@
+.saved_icon_wrapper{
+    height: 40px;
+    width: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    color: var(--color-font-main, #e6edf3);
+
+    background-color: var(--color-background-component, #161b22);
+
+    border: var(--color-border-main, #30363d) solid 1px;
+
+    overflow: hidden;
+
+    transition-duration: 1s;
+
+    cursor: pointer;
+
+    &.saved{
+        color: var(--color-border-good, #3fb950);
+    }
+    &.unsaved{
+        color: var(--color-border-danger, #f85149);
+    }
+
+    svg{
+        width: 24px;
+        height: 24px;
+
+        margin-right: 8px;
+
+        flex-shrink: 0;
+    }
+
+    &:hover{
+        width: 60px;
+    }
+}
