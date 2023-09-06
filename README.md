@@ -2,7 +2,7 @@
 
 > [!NOTE]  
 > There is even [preview](https://undeadnito.github.io/todo_app/) included  
-> _it is fully functional, so you can use it as is_
+> _it is completely functional, so you can use it as is_
 
 -   [x] **Write down** your goals
 -   [x] And **track** them as nether before
@@ -15,3 +15,9 @@
 > [!IMPORTANT]  
 > **Nobody can** use your precious data to train his dirty _neural networks_ even me 😸!  
 > Every peace of your todos stored exclusively on a local device
+
+---
+
+## Time-tested app
+
+Whole day nobody uses it and **no negative reviews**
