@@ -43,6 +43,12 @@
     border-radius: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    .main_content_wrapper{
+        width: 80%;
+    }
+}
+
 .main_todos_wrapper{
     display: flex;
     flex-direction: column;
