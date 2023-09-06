@@ -12,6 +12,7 @@ import './main.scss';
 export const Main = () =>{
 
     const [activeTitle, setActiveTitle] = useState('')
+    const [doneFilter, setDoneFilter] = useState([true, true])
 
     const [
         todos,
@@ -25,11 +26,13 @@ export const Main = () =>{
             <div className="main_content_wrapper">
                 <SearchBar placeholder="Enter task name" 
                     onTextChange={text => setActiveTitle(text)} 
-                    onAddClick={title => addTodo(title)}/>
+                    onAddClick={title => addTodo(title)}
+                    onDoneFilterChange={(done, notDone) => setDoneFilter([done, notDone])}/>
                 <div className="main_todos_wrapper">
                     {
                         todos
                         .filter(todo => todo.title.toLowerCase().includes(activeTitle.toLowerCase()))
+                        .filter(todo => (doneFilter[0]  && todo.done) || (doneFilter[1] && !todo.done))
                         .map((todo) =>{
                             return <TodoEntry key={todo.id} todo={todo} 
                                 onChange={changed => changeTodo(changed)}

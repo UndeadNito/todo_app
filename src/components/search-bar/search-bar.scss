@@ -43,8 +43,11 @@
         width: 40px;
         height: 40px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         border: var(--color-border-main, #30363d) solid 1px;
-        border-radius: 0 10px 10px 0;
 
         background-color: transparent;
 
@@ -54,6 +57,10 @@
 
         transition-duration: .3s;
 
+        &:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+
         &:hover{
             border-color: var(--color-border-active, #2f81f7);
         }
@@ -61,5 +68,20 @@
         &:active{
             border-color: transparent;
         }
+
+        svg{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.search_bar_done_filter{
+    &.active{
+        border-color: var(--color-border-active, #2f81f7);
+    }
+
+    &:not(.active):hover{
+        border-color: var(--color-border-hover, #8b949e);
     }
 }
