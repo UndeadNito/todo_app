@@ -36,7 +36,6 @@ const useTodos = (): [Todo[], (title: string) => void, (changedTodo: Todo) => vo
             window.dispatchEvent(new Event('todos-saved'))
             setChanged(false)
         }
-        console.log('did smf', changed)
     }
 
 
@@ -64,8 +63,6 @@ const useTodos = (): [Todo[], (title: string) => void, (changedTodo: Todo) => vo
         })
 
         setChanged(true);
-
-        console.log('changed')
     }
 
     

@@ -1,4 +1,4 @@
-const initTodos = () =>{
+const initTodos = (): Todo[] =>{
     const todosString = localStorage.getItem('todos')
 
     if (todosString === null) {
