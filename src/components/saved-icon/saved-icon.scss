@@ -20,9 +20,11 @@
 
     &.saved{
         color: var(--color-border-good, #3fb950);
+        border-right-color: var(--color-border_good, #3fb950);
     }
     &.unsaved{
         color: var(--color-border-danger, #f85149);
+        border-right-color: var(--color-border-danger, #f85149);
     }
 
     svg{

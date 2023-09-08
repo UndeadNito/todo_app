@@ -40,6 +40,11 @@ const DefaultTodos: Todo[] = [
         title: 'enter todo title to the search field and press "+" button to add todo',
         done: false,
     },
+    {
+        id: '5',
+        title: 'your todos saves once a minute. Check save state in a sticker at the "+" button',
+        done: false,
+    },
 ]
 
 const ErrorTodos: Todo[] =[
