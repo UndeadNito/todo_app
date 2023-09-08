@@ -45,6 +45,11 @@ const DefaultTodos: Todo[] = [
         title: 'your todos saves once a minute. Check save state in a sticker at the "+" button',
         done: false,
     },
+    {
+        id: '6',
+        title: 'save your data right now by clicking the sticker',
+        done: false,
+    },
 ]
 
 const ErrorTodos: Todo[] =[
